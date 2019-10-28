@@ -124,11 +124,11 @@ def detect(s):
     import numpy as np
     res = loaded_model.predict([np.array(data)])[0]
     if res == 1:
-        res = 'pos'
+        res = 'Positive'
     elif res == 0:
-        res = 'nat'
+        res = 'Natural'
     else:
-        res = 'neg'
+        res = 'Negative'
     return res
 
 
@@ -138,7 +138,7 @@ def home():
 
 
 @app.route("/api", methods=[ 'POST'])
-def notes_list():
+def detect_api():
     if request.method == 'POST':
         a = request.get_json()
 
