@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phân tích cảm xúc bình luận</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}">
+</head>
+<body>
+    <input type="text" id="txt"/>
+    <input type="button" id="btn" value="DETECT">
+    <h3 id="out"></h3>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'jquery-3.4.1.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'script.js') }}"></script>
+</body>
+</html>
